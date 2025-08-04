@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Solar Roof Calculator (Raw)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="controls">
+      <input id="address" type="text" placeholder="Search address" />
+      <input id="energy" type="number" value="900" placeholder="Monthly kWh" />
+      <button id="clear">Clear</button>
+      <div id="output">
+        <p>Total roof area: <span id="area">0</span> ft²</p>
+        <p>Fitted panel count: <span id="panels">0</span></p>
+        <p>Estimated energy production: <span id="production">0</span> kWh</p>
+        <p>Panels needed for consumption: <span id="needed">0</span></p>
+      </div>
+    </div>
+    <div id="map"></div>
+    <script src="script.js"></script>
+    <!-- Replace YOUR_API_KEY with a valid Google Maps API key -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places,geometry,drawing&callback=initMap"></script>
+  </body>
+</html>
+
