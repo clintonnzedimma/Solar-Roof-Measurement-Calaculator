@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Solar Roof Measurement Calculator - Raw</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="controls">
+    <input id="address" type="text" placeholder="Enter address" />
+    <input id="energy" type="number" placeholder="Monthly energy consumption (kWh)" value="900" />
+    <button id="clear">Clear</button>
+    <div id="output">
+      <p>Total roof area: <span id="area">0</span> ft²</p>
+      <p>Estimated panel count: <span id="panels">0</span></p>
+      <p>Estimated energy production: <span id="production">0</span> kWh</p>
+    </div>
+  </div>
+  <div id="map"></div>
+  <script src="script.js"></script>
+  <!-- Replace YOUR_API_KEY with an actual Google Maps API key -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places,geometry,drawing&callback=initMap"></script>
+</body>
+</html>
